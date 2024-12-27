@@ -10,9 +10,9 @@ interface CreateProductProps {
 const CreateProduct = ({ addProduct }: CreateProductProps) => {
   const [title, setTitle] = useState("");
   const [img, setImg] = useState("");
-  const [price, setPrice] = useState(100);
+  const [price, setPrice] = useState(0);
   const [desc, setDesc] = useState("");
-  const [oldPrice, setOldPrice] = useState(150);
+  const [oldPrice, setOldPrice] = useState(0);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
